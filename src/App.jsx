@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Settings, Battery, Zap, DollarSign, Box, Activity, AlertTriangle, CheckCircle, TrendingUp, Sliders, Monitor } from 'lucide-react';
+import coverImage from '../H2EV cover.png';
 
 export default function App() {
   // --- STATE: UI Navigation ---
@@ -191,6 +192,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 p-6 font-sans text-slate-800">
       <div className="max-w-7xl mx-auto space-y-6">
+        <div className="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+          <img
+            src={coverImage}
+            alt="H2EV cover"
+            className="w-full h-52 md:h-72 object-cover"
+          />
+        </div>
         
         {/* HEADER & TABS */}
         <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
