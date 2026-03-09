@@ -429,10 +429,10 @@ export default function App() {
                       <p className="text-xs text-slate-500">Battery Chem / Usable</p>
                       <p className="font-semibold text-slate-800 mt-1">LFP / {constants.batteryDoD * 100}% DoD</p>
                     </div>
-                    <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    {/* <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
                       <p className="text-xs text-slate-500">Charger Matrix</p>
                       <p className="font-semibold text-slate-800 mt-1">8 × 90kW DABs</p>
-                    </div>
+                    </div> */}
                     <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
                       <p className="text-xs text-slate-500">Daily Fuel (LPG)</p>
                       <p className="font-semibold text-slate-800 mt-1">{Math.round(((inputs.carsPerDay * inputs.energyPerCar + results.totalAuxPower * 24) / constants.fcEfficiency) / constants.lpgLHV).toLocaleString()} Liters</p>
